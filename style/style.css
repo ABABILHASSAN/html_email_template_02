@@ -1,0 +1,237 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,400;0,600;0,800;1,200&family=Quicksand:wght@400;500;700&display=swap');
+
+*{
+        font-family: 'Quicksand', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        outline: none;
+        border: none;
+        transition: all .2s linear;
+}
+
+
+
+html{
+        font-size: 62.5%;
+        overflow-x: hidden;
+        scroll-padding-top: 5.5rem;
+        scroll-behavior: smooth;
+}
+
+body{
+        background-color: #F1F4F4;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2%;
+        color: #565859;
+}
+
+.line{
+        clear: both;
+        margin: 4% auto;
+        width: 96%;
+        height: 1px;
+        background-color: #CA006E;
+}
+
+.button_holder{
+        margin: 2.5rem 2%;
+        text-align: right;
+}
+
+.button_holder a{
+        background: #0094CB;
+        padding: 1rem 2rem;
+        font-size: 2rem;
+        color: #EDBB04;
+        font-weight: bold;
+}
+
+.button_holder:hover a{
+        color: #D42887;
+        background-color: #373D53;
+}
+
+img{
+        width: 100%;
+}
+
+#wrapper{
+        margin: 0 auto;
+        background: #fff;   
+}
+
+#wrapper .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        padding: 2rem 3%;
+}
+
+#wrapper .header .logo{
+        width: 25rem;
+}
+
+#wrapper .header .icons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+
+}
+
+#wrapper .header .icons i{
+        background: #0094CB;
+        width: 4.5rem;
+        height: 4.5rem;
+        line-height: 4.5rem;
+        text-align: center;
+        font-size: 2.5rem;
+        border-radius: 4px;
+        color: #EDBB04;
+}
+
+#wrapper .header .icons i:hover{
+        color: #BC0066;
+        background-color: #000000;
+}
+
+#wrapper .section h2{
+        letter-spacing: 1%;
+        padding-top: 1rem;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-bottom: 1rem;
+        font-weight: 900;
+        font-size: 2.7rem;
+        color: #C30069;
+        text-transform: capitalize;
+}
+
+#wrapper .section p{
+        padding: 2%;
+        text-align: justify;
+        font-size: 1.6rem;
+        color: #373D53;
+        font-weight: 500;
+}
+
+
+#wrapper .boxes .box_container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        padding: 2%;
+}
+
+#wrapper .boxes .box_container .box h2{
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+        color: #C30069;
+}
+
+#wrapper .boxes .box_container .box p{
+        text-align: justify;
+        font-size: 1.4rem;
+        color: #373D53;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+}
+
+#wrapper .boxes .box_container .box a{
+        font-size: 1.7rem;
+        color: #0094CB;
+        font-weight: bold;
+}
+
+#wrapper .boxes .box_container .box a:hover{
+        cursor: pointer;
+        text-decoration: underline;
+}
+
+#wrapper .footer{
+        text-align: center;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-bottom: 3%;
+        
+}
+
+#wrapper .footer .contact{
+        font-size: 2rem;
+        font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries starts */
+
+@media (max-width: 600px){
+        #wrapper .header{
+                flex-direction: column;
+                justify-content: center;
+        }
+
+        #wrapper .header .icons i{
+                width: 4rem;
+                height: 4rem;
+                line-height: 4rem;
+                font-size: 2rem;
+        }
+
+        #wrapper .boxes .box_container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding-left: 2%;
+                padding-right: 2%;
+        }
+
+        #wrapper .boxes .box_container .box{
+                width: 85%;
+        }
+
+}
+
+
+
+@media (max-width: 450px){
+        html{
+                font-size: 55%;
+        
+        }
+
+        #wrapper .boxes .box_container .box{
+                width: 100%;
+        }
+
+}
+
+/* media queries ends */
